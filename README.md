@@ -36,9 +36,8 @@ Run it:
 ```
 
 ## ✅ Verify Your Node
-Check peers:
 ```console
-curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":1}' http://localhost:8545
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":53}' http://127.0.0.1:8545
 ```
 
 ## ⚡ Run in Background
