@@ -3,7 +3,7 @@ set -e
 
 echo "🚀 Installing & Running Bitrock Testnet Node (with Bootnodes)..."
 
-sudo apt update && sudo apt install -y wget openjdk-17-jre-headless
+sudo apt update && sudo apt install -y wget openjdk-21-jre-headless
 
 NODE_DIR=$HOME/bitrock-node
 mkdir -p $NODE_DIR && cd $NODE_DIR
