@@ -5,22 +5,9 @@ With this script, anyone can:
 - Install all dependencies
 - Download and configure Besu automatically
 - Connect to the Bitrock Testnet
-- Keep the node alive with auto-restart
 
 ## 🔥 Quick Start
-Run this command to download & start your Bitrock Testnet node:
-#### Get all items
 
-```console
-  curl -s https://raw.githubusercontent.com/BitrockChain/bitrock-ignite/main/ignite-testnet-bitrock.sh | bash
-```
-The script will:
-
-- Install Hyperledger Besu 25.4.1
-- Fetch the latest Bitrock Testnet genesis
-- Start the node & keep it running automatically
-
-## 🚀 Manual Usage
 - Clone the repo:
 ```console
 git clone https://github.com/BitrockChain/bitrock-ignite.git
