@@ -11,7 +11,7 @@ With this script, anyone can:
 Run this command to download & start your Bitrock Testnet node:
 #### Get all items
 
-```http
+```console
   curl -s https://raw.githubusercontent.com/BitrockChain/bitrock-ignite/main/ignite-testnet-bitrock.sh | bash
 ```
 The script will:
@@ -22,31 +22,31 @@ The script will:
 
 ## 🚀 Manual Usage
 - Clone the repo:
-```http
+```console
 git clone https://github.com/BitrockChain/bitrock-ignite.git
 cd bitrock-ignite
 ```
 - Make the script executable:
-```http
+```console
 chmod +x ignite-testnet-bitrock.sh
 ```
 Run it:
-```http
+```console
 ./ignite-testnet-bitrock.sh
 ```
 
 ## ✅ Verify Your Node
 Check peers:
-```http
+```console
 curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":1}' http://localhost:8545
 ```
 
 ## ⚡ Run in Background
-```http
+```console
 nohup ./ignite-testnet-bitrock.sh > bitrock.log 2>&1 &
 ```
 Logs:
-```http
+```console
 tail -f bitrock.log
 ```
 
