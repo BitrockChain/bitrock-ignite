@@ -4,15 +4,16 @@ set -e
 echo "Installing & Running Bitrock Testnet Node..."
 
 # === Install Dependencies ===
-sudo apt update && sudo apt install -y wget unzip openjdk-17-jre-headless
+sudo apt update && sudo apt install -y wget openjdk-17-jre-headless
 
 # === Setup Directories ===
 mkdir -p $HOME/bitrock-node && cd $HOME/bitrock-node
 
 # === Download Besu ===
 if [ ! -d "besu" ]; then
-    wget https://hyperledger.jfrog.io/artifactory/besu-binaries/besu-25.4.1.zip -O besu.zip
-    unzip -o besu.zip && mv besu-25.4.1 besu
+    wget https://github.com/hyperledger/besu/releases/download/25.4.1/besu-25.4.1.tar.gz -O besu.tar.gz
+    tar -xzf besu.tar.gz
+    mv besu-25.4.1 besu
 fi
 
 # === Download Bitrock Genesis ===
